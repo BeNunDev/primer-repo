@@ -73,7 +73,17 @@ section h2 {
   background-color: #6c757d;
   color: #fff;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
+main {
+  flex: 1;
+}
 footer {
   font-size: 0.9rem;
 }
