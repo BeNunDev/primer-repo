@@ -101,7 +101,11 @@ footer {
   overflow: hidden;
   transition: transform 0.2s;
 }
-
+.tamaño-imagen {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
 .card-producto:hover {
   transform: scale(1.03);
 }
