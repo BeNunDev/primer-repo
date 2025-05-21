@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@keyframes backgroundPulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cardFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.card-producto {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.btn-outline-primary, .btn-primary {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .btn-outline-primary, .btn-primary {
+    width: 100%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
+  background-image: url(./Ecommerce-TuMuebleOnline/Img/muebles-modernos-diseno.jpg);
+  background-size: 200% 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  animation: backgroundPulse 20s ease infinite;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media (max-width: 576px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0;
+  }
+}
+
+.nav-link {
+  margin: 0 0.5rem;
+  color: #343a40 !important;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+header {
+  background: url(./Ecommerce-TuMuebleOnline/Img/muebles.jpg) center/cover no-repeat;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+header p {
+  font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+  header p {
+    font-size: 1rem;
+  }
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 1200px) {
+  section h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 576px) {
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #5a6268;
+}
+.btn-outline-primary {
+  border-color: #6c757d;
+}
+.btn-outline-primary:hover {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+main {
+  flex: 1;
+}
+
+.recuadro {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 0.5rem;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-producto {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-producto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: cardFloat 3s ease infinite;
+}
+.card-producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tamaño-imagen {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sobre-nosotros {
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+@media (max-width: 576px) {
+  .sobre-nosotros {
+    padding: 1rem;
+  }
+}
+
+.contacto-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  max-width: 600px;
+  margin: auto;
+}
+@media (max-width: 576px) {
+  .contacto-form {
+    padding: 1rem;
+  }
+}
+.contacto-form input,
+.contacto-form textarea {
+  margin-bottom: 1rem;
+}
+.contacto-form button {
+  background-color: #007bff;
+  border: none;
+}
+.contacto-form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-outline-primary {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
