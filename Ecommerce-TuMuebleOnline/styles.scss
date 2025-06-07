@@ -105,7 +105,7 @@ body {
   background-color: $color-bg-light;
 
   // Background animation
-  background-image: url(./Ecommerce-TuMuebleOnline/Img/muebles-modernos-diseno.jpg);
+  background-image: url(./Img/muebles-modernos-diseno.jpg);
   background-size: 200% 200%;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,8 +144,7 @@ body {
 
 // Header styles
 header {
-  background: url(./Ecommerce-TuMuebleOnline/Img/muebles.jpg) center/cover
-    no-repeat;
+  background: url(./Img/muebles.jpg) center/cover no-repeat;
   color: $color-text-light;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 
