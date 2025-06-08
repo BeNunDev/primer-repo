@@ -55,7 +55,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #212529;
   background-color: #f8f9fa;
-  background-image: url(./Img/muebles-modernos-diseno.jpg);
+  background-image: url(.//Ecommerce-TuMuebleOnline/Img/muebles-modernos-diseno.jpg);
   background-size: 200% 200%;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,8 @@ body {
 }
 
 header {
-  background: url(./Img/muebles.jpg) center/cover no-repeat;
+  background: url(./Ecommerce-TuMuebleOnline/Img/muebles.jpg) center/cover
+    no-repeat;
   color: #ffffff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
